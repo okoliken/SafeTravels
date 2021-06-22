@@ -224,19 +224,19 @@
             </div>
         </div>
         <div class="container my-5">
-            <form action="https://formspree.io/f/xeqvkyqg" method="post">
+            <form action="https://formspree.io/f/xeqvkyqg" method="post" id="form">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">From *</label>
-                            <input type="email" name="toEmail" id="name" class="form-control" placeholder="Enter Your Email">
+                            <input type="email" name="toEmail" id="email" class="form-control" placeholder="Enter Your Email">
                         </div>
                     </div>
     
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="email">Subject *</label>
-                            <input type="text" name="subject" id="email" class="form-control" placeholder="Subject of the Email">
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject of the Email">
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -247,7 +247,7 @@
                     </div>
                     
                 </div>
-                <button  class="btn roberto-btn" type="submit">Send</a>
+                <button  class="btn roberto-btn send" type="submit">Send</a>
             </form>
         </div>
     </div>
@@ -330,6 +330,20 @@
 
     <!-- **** All JS Files ***** -->
     <!-- jQuery 2.2.4 -->
+  <script>
+    const form = document.querySelector('.form')
+    const email = document.querySelector('#email')
+    const subject = document.querySelector('#subject')
+    const message = document.querySelector('#message')
+    form.addEventListener('submit',()=>{
+      // email.value = ''
+      // subject.value = ''
+      // message.value = ''
+      console.log('dhjdhdj')
+    })
+
+
+  </script>
     <script src="js/jquery.min.js"></script>
     <!-- Popper -->
     <script src="js/popper.min.js"></script>
